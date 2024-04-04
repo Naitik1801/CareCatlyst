@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundraising – Best Online Fundraising Site In India - CareCatalyst</title>
+    <link rel="stylesheet" href="./styles/BrowseFundraisers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/navBar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+
+<body>
+    <!-- ==================== navbar========================================== -->
+    <div id="nav">
+        <div id="logo" onclick="window.location.href='index.html'" style="cursor: pointer;"><img
+                src="Images/carecatalyst-high-resolution-logo-transparent.png" alt="">
+        </div>
+        <div id="sec_nav">
+            <a href="./BrowseFundraisers.html">Browse Fundraisers</a>
+            <div class="tdropdown">
+                <button onclick="mytFunction()" class="tdropbtn">Fundraiser for<i
+                        class="fa-sharp fa-solid fa-caret-down"></i></button>
+                <div id="tmyDropdown" class="tdropdown-content">
+                    <a href="medical.html" class="app">Medical treatment</a>
+                    <a href="animal.html" class="app">Animal treatment</a>
+                    <a href="education.html" class="app">Educational Help</a>
+                    <a href="children.html" class="app">Children treatment</a>
+                    <a href="other.html" class="app">Other cases</a>
+                </div>
+            </div>
+            <a href="./howitworks.html">How it works</a>
+            <!-- <span><i class="fa-solid fa-magnifying-glass"></i>
+                Search
+            </span> -->
+        </div>
+        <div id="trd_nav">
+            <button onclick="whatsapp()" id="whatsapp"> <i class="fa-brands fa-whatsapp"></i> Chat</button>
+            <button id="fund" onclick="signup()"> Start a Fundraiser</button>
+            <!-- <a href="./signin.html" class="signbtn">Sign In</a> -->
+
+        </div>
+        <button id="menu">
+            <label for="sidecheck" id="lab" onclick="side()"><i class="fa-solid fa-bars"></i></label></i></button>
+    </div>
+
+    <main>
+
+        <div id="main">
+            <div>
+                <div id="leftMain">
+                    <div>
+                        <ul id="list_P">
+                            <h2>CATEGORY</h2>
+                            <span class="line"></span>
+                            <span onclick="category(1)">All Categories</span>
+                            <span onclick="category(2)">Education</span>
+                            <span onclick="category(3)">Medical</span>
+                            <span onclick="category(4)">Women & Girls</span>
+                            <span onclick="category(5)">Animals</span>
+                            <span onclick="category(6)">Creative</span>
+                            <span onclick="category(7)">Food & Hunger</span>
+                            <span onclick="category(8)">Environment</span>
+                            <span onclick="category(9)">Children</span>
+                            <span onclick="category(10)">Memorial</span>
+                            <span onclick="category(11)">Community Development</span>
+                            <span onclick="category(12)">Others</span>
+                            <span class="line"></span>
+                            <button id="startaFundr_btn" role="button"
+                                onclick="window.location.href='fundraise.html';">Start a Fundraiser</button>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div id="main_right">
+                    <div id="search__container">
+                        <input type="text" placeholder="Search for fundraisers by Category" id="search__input"
+                            onkeypress="enter(event)">
+                        <!-- <span></span> -->
+                    </div>
+                    <div>Showing fundraisers for
+                        <select style="width: 20%; height: 30px;">
+                            <option value="" onclick='category(1)'>All Categories</option>
+                            <option value="" onclick="category(2)">Education</option>
+                            <option value="" onclick="category(3)">Medical</option>
+                            <option value="" onclick="category(4)">Woman & Girls</option>
+                            <option value="" onclick="category(5)">Animals</option>
+                            <option value="" onclick="category(6)">Creative</option>
+                            <option value="" onclick="category(7)">Food & Hunger</option>
+                            <option value="" onclick="category(8)">Environment</option>
+                            <option value="" onclick="category(9)">Children</option>
+                            <option value="" onclick="category(10)">Memorial</option>
+                            <option value="" onclick="category(11)">Community Development</option>
+                            <option value="" onclick="category(12)">Others</option>
+
+
+                        </select> under <select style="width: 14%; height: 30px">
+                            <option value="" onclick='category(1)'>All Types</option>
+                            <option value="" onclick="category(4)">Tax Benefits</option>
+                            <option value="" onclick="category(2)">Trending</option>
+                            <option value="" onclick="category(6)">Urgently Funds Required</option>
+                            <option value="">Successfully Funded</option>
+
+
+                        </select> from <select style="width: 17%; height: 30px">
+                            <option value="">All Location</option>
+                            <option value="">Mumbai</option>
+                            <option value="">Bengaluru</option>
+                            <option value="">New Delhi</option>
+                            <option value="">Hyderabad</option>
+                            <option value="">Chennai</option>
+                            <option value="" onclick="category(6)">Delhi</option>
+                            <option value="">Pune</option>
+                            <option value="">Kolkata</option>
+                            <option value="">Ahmedabad</option>
+                            <option value="">Jaipur</option>
+                            <option value="" onclick="category(5)">Lucknow</option>
+                            <option value="">Gurugram</option>
+                            <option value="">Chandigarh</option>
+                            <option value="">Noida</option>
+                            <option value="">Kochi</option>
+                            <option value="">Others</option>
+
+                        </select>
+                    </div>
+                    <div>
+                        <button id="reset_filter">Reset Filter</button>
+                    </div>
+                    <div id="appendData"></div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom_faq">
+            <p>Have a question? Check out our <a href="" style="text-decoration:none ;">FAQs</a> page or chat with us on
+                Facebook or WhatsApp.</p>
+            <div>
+                <button id="fb_btn" class="sm"><img
+                        src="https://i.pinimg.com/474x/38/9b/14/389b14861f4be0c8d84876b3dda9afc0.jpg" alt=""> CHAT WITH
+                    US</button>
+
+                <button id="whatsapp_btn" class="sm" onclick="whatsapp()"><img
+                        src="https://www.freepnglogos.com/uploads/whatsapp-logo-png-hd-2.png" alt=""> CHAT WITH
+                    US</button>
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+
+    <script src="./scripts/BrowseFundraisers.js"></script>
+    <script type="module">
+       
+
+        import footer from './components/EXfooter.js';
+        document.getElementById("footer").innerHTML = footer();
+    </script>
+    <script src="./scripts/nav.js"></script>
+</body>
+
+</html>

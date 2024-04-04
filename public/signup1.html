@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="./styles/login.css">
+
+    <style>
+        body {
+            min-height: 100vh;
+            width: 100%;
+            background-image: url(images/slider-img.png);
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <input type="checkbox" id="check">
+        <div class="login form">
+            <header>Sign Up</header>
+            <form id="signupForm" action="connect.php" method="post">
+                <input type="text" name="username" placeholder="Name" required>
+                <input type="text" name="email" placeholder="Email Address" required>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+                <input type="number" name="" id="number" placeholder="Mobile" required>
+                <input type="submit" class="button" value="Login">
+            </form>
+            <div class="signup">
+                <span class="signup">Already have an account?
+                    <a href="login1.html">Login</a>
+                </span>
+            </div>
+
+            <script>
+                document.getElementById("signupForm").addEventListener("submit", function (event) {
+                    var password = document.getElementById("password").value;
+                    var confirmPassword = document.getElementById("confirm_password").value;
+                    var passwordError = document.getElementById("passwordError");
+
+                    if (password !== confirmPassword) {
+                        alert("Passwords do not match")
+                        event.preventDefault();
+                    } else {
+                        passwordError.textContent = "";
+                        // Check for additional validation, for example, if username is valid
+                        var username = document.getElementById("username").value;
+                        if (!isValidUsername(username)) {
+                            event.preventDefault();
+                            alert("Invalid username. Please enter a valid username.");
+                            // Alternatively, you can use a modal popup for a better user experience
+                        }
+                    }
+                });
+
+                function isValidUsername(username) {
+                    // Example validation: Username must be at least 5 characters long
+                    return username.length >= 5;
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
