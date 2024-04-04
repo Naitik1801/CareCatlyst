@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundraising – Best Online Fundraising Site In India - CareCatalyst</title>
+    <link rel="stylesheet" href="./styles/BrowseFundraisers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/navBar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        /* Basic styling for the section */
+        .about-section {
+            display: flex;
+            flex-direction: column;
+            /* Change the direction to stack items vertically */
+            align-items: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* Styling for the image */
+        .about-image img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            /* Add margin at the bottom to separate from the text */
+        }
+
+        .about-content {
+            width: 60%;
+            line-height: 2;
+            font-size: medium;
+            font-weight: 600;
+            color: #666;
+            text-align: justify;
+            /* Add margin at the top to separate from the image */
+        }
+
+        .about-content h2 {
+            color: black;
+            text-align: center;
+        }
+
+        .about-content p {
+            /* Apply margin to paragraphs */
+            margin-bottom: 30px;
+            /* Adjust the margin to create more space */
+        }
+
+        /* Center the button container */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        /* Style for WhatsApp call button */
+        .whatsapp-call-button,
+        .share-button,
+        .donate-button {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        /* WhatsApp call button color */
+        .whatsapp-call-button {
+            background-color: #25d366;
+            /* WhatsApp brand color */
+        }
+
+        /* Share button color */
+        .share-button {
+            background-color: #3b5998;
+            /* Facebook brand color */
+        }
+
+        /* Donate button color */
+        .donate-button {
+            background-color: #ff4500;
+            /* Donate button color */
+        }
+
+        /* Hover effect for buttons */
+        .whatsapp-call-button:hover,
+        .share-button:hover,
+        .donate-button:hover {
+            opacity: 0.8;
+            /* Reduce opacity on hover */
+        }
+
+        .other-methods {
+            margin: 10px auto;
+            /* Center the section horizontally */
+            width: 80%;
+            /* Adjust the width as needed */
+            padding: 20px;
+            background-color: #e3e0e0;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .other-methods h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .method {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            /* Align items at the ends */
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .other-methods .method .p {
+            /* Take up remaining space */
+            line-height: 2;
+            font-weight: 900;
+            color: #666;
+            text-align: left;
+            /* Align to the left */
+        }
+
+        .method h3 {
+            color: #333;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e3e0e0
+        }
+
+        .method h3 i {
+            margin-right: 5px;
+            font-size: 100px;
+            opacity: 70%;
+            background-color: #e3e0e0
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- ==================== navbar========================================== -->
+    <div id="nav">
+        <div id="logo" style="cursor: pointer;" onclick="home()"><img
+                src="Images/carecatalyst-high-resolution-logo-transparent.png" alt="">
+        </div>
+        <div id="sec_nav">
+            <a href="./BrowseFundraisers.html">Browse Fundraisers</a>
+            <div class="tdropdown">
+                <button onclick="mytFunction()" class="tdropbtn">Fundraiser for<i
+                        class="fa-sharp fa-solid fa-caret-down"></i></button>
+                <div id="tmyDropdown" class="tdropdown-content">
+                    <a href="medical.html" class="app">Medical treatment</a>
+                    <a href="animal.html" class="app">Animal treatment</a>
+                    <a href="education.html" class="app">Educational Help</a>
+                    <a href="children.html" class="app">Children treatment</a>
+                    <a href="other.html" class="app">Other cases</a>
+                </div>
+            </div>
+            <a href="./howitworks.html">How it works</a>
+            <!-- <span><i class="fa-solid fa-magnifying-glass"></i>
+                Search
+            </span> -->
+        </div>
+        <div id="trd_nav">
+            <button onclick="whatsapp()" id="whatsapp"> <i class="fa-brands fa-whatsapp"></i> Chat</button>
+            <button id="fund" onclick="signup()"> Start a Fundraiser</button>
+            <!-- <a href="signup.html" onclick="signShow()" class="signbtn">Sign In</a> -->
+
+        </div>
+        <button id="menu">
+            <label for="sidecheck" id="lab" onclick="side()"><i class="fa-solid fa-bars"></i></label></i></button>
+    </div>
+
+    <div id="head">
+        <h1 style="text-align: center; padding-top: 50px;">Please Help The Ragpickers Children To Study And Grow In
+            Their Life!</h1>
+    </div>
+
+    <section class="about-section">
+        <div class="about-image">
+            <img src="https://kettocdn.gumlet.io/media/campaign/863000/863016/image/65e5a0d9b9a93.jpg?w=768&dpr=1.3"
+                alt="Fundraiser Leaderboard">
+        </div>
+        <div class="about-content">
+            <h2>About Our Cause</h2>
+            <p>
+                Access to quality education is a fundamental right for every child, regardless of their socio-economic
+                background. Unfortunately,
+                children from marginalized communities, such as ragpickers and slum dwellers, often face numerous
+                challenges in pursuing their education.
+                In Delhi Azadpur mandi slum area, where poverty and limited resources prevail, it is essential to
+                provide the necessary support to these children.
+                Our campaigns focus on the importance of providing quality education,
+                food and clothing support to these children and highlight the potential impact it can have on their
+                educational journey.
+            </p>
+
+            <p>
+                Children belonging to ragpicker and slum dweller families encounter multiple barriers that hinder their
+                educational development.
+                Some of the key challenges they face include:
+
+            <p>
+                1. Lack of Resources: These children often lack access to basic educational resources such as textbooks,
+                notebooks, stationery, and
+                other learning materials. The absence of these resources limits their ability to actively engage in
+                classroom activities and hampers their learning progress.
+                2. Financial Constraints: Families living in slums or engaged in ragpicking activities struggle to meet
+                their basic needs, leaving little or
+                no financial resources to invest in their children's education. School fees, uniforms, and stationary
+                costs become unaffordable burdens for these families.
+                3. Nutritional Insecurity: Proper nutrition plays a vital role in a child's overall development,
+                including their cognitive abilities.
+                Children from economically disadvantaged backgrounds often face nutritional challenges, which can
+                negatively impact their concentration,
+                academic performance, and overall well-being.
+
+
+            </p>
+
+            <p>
+                This project has potential & impact full in main streaming of Ragpickers & street children. Their basic
+                needs are met & they will get new life through gaining knowledge, vocational skills & life skills. They
+                will get love & affection as if their parents provide. Their confidence level will increase & become a
+                good asset to the community.
+
+                Expenses for 200 Ragpickers Children
+
+
+                1 Child monthly support (for Education, Food, Clothing) Rs 1200/Month
+
+
+                1child yearly support (for Education, Food, Clothing) Rs 1200 x12= 14,400
+
+
+                Expanse for 200 children monthly support 1200x200 =2,40,000
+
+                Expanse for 200 children yearly support= 14,400x200 = Rs.28,80,000
+            </p>
+
+            <p>
+                Thank you so much for your generosity and support.
+            </p>
+        </div>
+
+        <div class="button-container">
+            <a href="tel:+1234567890" class="whatsapp-call-button">
+                <i class="fab fa-whatsapp"></i> Call on WhatsApp
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.example.com" target="_blank"
+                rel="noopener noreferrer" class="share-button">
+                Share on Facebook
+            </a>
+            <a href="donate.html" class="donate-button">
+                Donate Now
+            </a>
+        </div>
+
+    </section>
+
+
+
+    <section class="other-methods">
+        <h2>Other Donation Methods</h2>
+        <h5>Transfer directly to the Bank account of this Fundraiser. Only INR transfers are allowed.</h5>
+        <div class="method">
+            <div>
+                <h3><i class="fas fa-university"></i></h3>
+            </div>
+            <div class="p">
+                <p>Virtual A/C No: </p>
+                <p>Virtual A/C Name: </p>
+                <p>A/C Type: </p>
+                <p>IFSC: </p>
+            </div>
+            <div class="p">
+                <p>2223122490517776</p>
+                <p>Bandana Pandey-carecatalyst</p>
+                <p>Current</p>
+                <p>RATN0VAAPIS</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =======Footer========= -->
+
+    <div id="foot">
+        <footer>
+            <div id="footer">
+                <div id="mainfoot">
+                    <div id="foot1">
+                        <div id="footimg">
+                            <img src="Images/carecatalyst-high-resolution-logo-transparent.png" alt="">
+                        </div>
+                        <div id="footlogo">
+                            <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"> <i class="fa-brands fa-whatsapp"></i></a>
+
+
+                        </div>
+
+                        <div id="follow">
+                            <h1> 150</h1>
+                            <p>Followers</p>
+                        </div>
+
+                        <div id="Footcontact">
+                            <p>For any queries</p>
+                            <p>Email: info@carecataylst.org</p>
+                            <p> Contact No: +91 99999-XXXXX</p>
+
+                        </div>
+                    </div>
+                    <div id="foot2">
+                        <h2>Causes</h2>
+                        <div>
+                            <a href="medical.html" style="text-decoration: none; color: white; ;">Medical
+                                crowdfunding</a>
+                            <a href="children.html" style="text-decoration: none; color: white;">Child Welfare</a>
+                            <a href="education.html" style="text-decoration: none; color: white;">Education
+                                crowdfunding</a>
+                            <a href="animal.html" style="text-decoration: none; color: white;">Animal crowdfunding</a>
+                            <a href="other.html" style="text-decoration: none; color: white;">Others</a>
+
+                        </div>
+                    </div>
+                    <div id="foot3">
+                        <h2>How it works?</h2>
+                        <div>
+                            <a href="ngo.html" style="text-decoration: none; color: white; ;">Fundraising for NGOs</a>
+                            <a href="tips.html" style="text-decoration: none; color: white; ;">Fundraising Tips</a>
+                            <a href="howitworks.html" style="text-decoration: none; color: white; ;">What is
+                                Crowfunding?</a>
+                            <a href="BrowseFundraisers.html" style="text-decoration: none; color: white; ;">Browse
+                                Fundraisers</a>
+
+
+                        </div>
+                    </div>
+                    <div id="foot4">
+                        <h2>About Us</h2>
+                        <div>
+                            <p>Team CareCatalyst</p>
+                            <p>In The News</p>
+                            <p>Careers</p>
+                            <p>CareCatalyst Blog</p>
+                            <p>Success Stories</p>
+
+
+
+                        </div>
+                    </div>
+                    <div id="foot5">
+                        <h2>Support</h2>
+                        <div>
+                            <p>Medical Finance</p>
+                            <p>FAQs &amp; Help Center</p>
+                            <p>Are CareCatalyst Campaigns</p>
+                            <p>Genuine?</p>
+                            <p>Fundraiser Video</p>
+                            <p>Trust &amp; Safety</p>
+                            <p>Plans &amp; Pricing</p>
+                            <p>Contact Us</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="bottomfoot">
+
+                    <img src="	https://ketto.gumlet.io/assets/images/homepage/footer-secured-card.png?w=457&amp;dpr=2.0"
+                        alt="">
+
+
+                </div>
+            </div>
+
+            <div id="affooter">
+                <p>Copyright © 2024 CareCatalyst Online Ventures Pvt Ltd. All Rights Reserved.
+                    Terms of Use |
+                    Privacy Policy |
+                    AML Policy |
+                    Use of cookies </p>
+            </div>
+
+            <div id="affooter2">
+                <p>Know more about CareCatalyst Crowdfunding Platform</p>
+            </div>
+
+
+        </footer>
+
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="./scripts/jquery.lbslider.js"></script>
+        <script>
+            jQuery(".slider").lbSlider({
+                leftBtn: ".sa-left",
+                rightBtn: ".sa-right",
+                visible: 3,
+                // autoPlay: true,
+                // autoPlayDelay: 5,
+            });
+        </script>
+
+        <script type="module">
+            import footer from "./components/EXfooter.js"
+            let foot = document.getElementById("foot");
+            foot.innerHTML = footer();
+        </script>
+        <script src="./scripts/index.js"></script>
+        <script src="./scripts/nav.js"></script>
+</body>

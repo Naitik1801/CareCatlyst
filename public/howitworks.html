@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How it Works</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./styles/howitworks.css">
+    <link rel="stylesheet" href="./styles/navBar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</head>
+
+<body>
+    <!-- ==================== navbar========================================== -->
+    <div id="nav">
+        <div id="logo" onclick="home()" style="cursor: pointer;"><img
+                src="Images/carecatalyst-high-resolution-logo-transparent.png" alt="">
+        </div>
+        <div id="sec_nav">
+            <a href="./BrowseFundraisers.html">Browse Fundraisers</a>
+            <div class="tdropdown">
+                <button onclick="mytFunction()" class="tdropbtn">Fundraiser for<i
+                        class="fa-sharp fa-solid fa-caret-down"></i></button>
+                <div id="tmyDropdown" class="tdropdown-content">
+                    <a href="medical.html" class="app">Medical treatment</a>
+                    <a href="animal.html" class="app">Animal treatment</a>
+                    <a href="education.html" class="app">Educational Help</a>
+                    <a href="children.html" class="app">Children treatment</a>
+                    <a href="other.html" class="app">Other cases</a>
+                </div>
+            </div>
+            <a href="./howitworks.html">How it works</a>
+            <!-- <span><i class="fa-solid fa-magnifying-glass"></i>
+                Search
+            </span> -->
+        </div>
+        <div id="trd_nav">
+            <button onclick="whatsapp()" id="whatsapp"> <i class="fa-brands fa-whatsapp"></i> Chat</button>
+            <button id="fund" onclick="signup()"> Start a Fundraiser</button>
+            <!-- <a href="./signin.html" class="signbtn">Sign In</a> -->
+
+        </div>
+        <button id="menu">
+            <label for="sidecheck" id="lab" onclick="side()"><i class="fa-solid fa-bars"></i></label></i></button>
+    </div>
+
+    <div id="head" style="padding-top: 50px; padding-bottom: 50px;">
+        <h1>Raising Funds was never this easy. Start a fundraiser in 5 minutes!</h1>
+    </div>
+    <div id="slide-bar">
+        <div id="boox">
+            <div id="slider">
+                <div class="slides">
+                    <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image1.jpg?w=768&dpr=1.0"
+                        width="100%" />
+
+                </div>
+
+                <div class="slides">
+                    <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image2.jpg?w=768&dpr=1.0"
+                        width="100%" />
+                </div>
+
+                <div class="slides">
+                    <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image3.png?w=768&dpr=1.0"
+                        width="100%" />
+                </div>
+
+                <div class="slides">
+                    <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image4.png?w=768&dpr=1.0"
+                        width="100%" />
+                </div>
+
+                <div class="slides">
+                    <img src="https://ketto.gumlet.io/assets/images/how-it-works/slider-images/image5.jpg?w=768&dpr=1.0"
+                        width="100%" />
+                </div>
+
+                <div id="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span
+                        class="dot"></span><span class="dot"></span></div>
+            </div>
+            <div id="some">
+                <div>
+                    <h2>50+</h2>
+                    <p>DONORS
+                    <p>
+
+                </div>
+
+                <div>
+                    <h2>17</h2>
+                    <p>FUNDRAISERS
+                    <p>
+
+                </div>
+
+                <div>
+                    <h2>0%</h2>
+                    <p>PLATFORM FEE
+                    <p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div id="net">
+        <h1>What is Crowdfunding?</h1>
+        <p>In its simplest form, Crowdfunding is a practice of giving monetary funds to overcome specific social,
+            cultural, or economic hurdles individuals face in their daily lives.</p>
+    </div>
+    <div id="video-part">
+
+        <div id="para">
+            <h2>So how does Crowdfunding work On CareCatalyst?</h2>
+            <p>Let us assume an individual, unfortunately, meets with an accident on the road. His medical expenses
+                and
+                hospital bills start piling up. Now he needs ₹5 Lakh to pay his expensive medical bills.
+                Fortunately,
+                his best friend signed up on CareCatalyst’s crowdfunding platform, completed the process of submitting
+                valid
+                documents needed for verification. In a few minutes, he created a crowdfunding campaign to raise
+                funds
+                for his friend’s medical expenses. Now, this campaign can be shared with all his near and dear ones
+                through WhatsApp, Instagram, Twitter, Facebook and E-mail. In a matter of few minutes, funds start
+                coming in to support the financial needs of the injured friend.</p>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- start a fundraise start  -->
+    <div id="safr1">
+        <div>
+            <img src="https://ketto.gumlet.io/assets/images/homepage/sac-separator.png?w=100&dpr=1.5" alt="">
+        </div>
+
+        <div>
+            <h3>Start your fundraiser</h3>
+            <p>It’ll take only 2 minutes. Just tell us a few details about you and the ones you are raising funds
+                for.</p>
+            <br><br><br><br>
+            <h3>Share your fundraiser</h3>
+            <p>All you need to do is share the fundraiser with your friends and family. In no time, support will
+                start pouring in.</p>
+            <p id="smlp122">Share your fundraiser directly from dashboard on social media.</p>
+            <br><br><br> <br>
+            <h3>Withdraw Funds</h3>
+            <p>The funds raised can be withdrawn without any hassle directly to your bank account.</p>
+            <p id="smlp122">It takes only 5 minutes to withdraw funds on CareCatalyst.</p>
+        </div>
+
+        <!-- ontrols autoplay loop -->
+
+    </div>
+    <!-- start a fundraise end  -->
+    <div id="bt">
+        <button onclick="window.location.href='fundraise.html'">START A FUNDRAISER</button>
+    </div>
+    <div id="next-bt">
+        <p>Have any questions for us? Chat with our team on Facebook or WhatsApp now.</p>
+        <div id="bn">
+            <button onclick="window.location.href='https://www.facebook.com/sharer/sharer.php?u=https://www.example.com'">
+                <img src="https://icon-library.com/images/android-facebook-icon/android-facebook-icon-11.jpg"
+                    alt="error">
+                CHAT WITH US
+            </button>
+            <button onclick="window.location.href='https://api.whatsapp.com/send?phone=9199999-XXXXX'">
+                <img src="https://seeklogo.com/images/W/whatsapp-icon-logo-BDC0A8063B-seeklogo.com.png" alt="error">
+                CHAT WITH US
+            </button>
+        </div>
+
+    </div>
+    <div id="newh">
+        <h1>We provide everything you need</h1>
+    </div>
+    <div id="grf">
+        <div>
+            <div>
+                <h4>Payout</h4>
+                <p></p>
+
+                <p>
+                    This is your money, you can withdraw it at any point during the course of your fundraiser
+                </p>
+            </div>
+
+        </div>
+        <div>
+            <div>
+                <h4>International payment support</h4>
+                <p></p>
+                <p>
+                    We accept donations in multiple currencies from anywhere in the world
+                </p>
+            </div>
+
+        </div>
+        <div>
+            <div>
+                <h4>Multiple people - Same Fundraiser</h4>
+                <p></p>
+                <p>
+                    Multiple people manage and fundraise for your cause
+                </p>
+            </div>
+
+        </div>
+        <div>
+            <div>
+                <h4>Personalized Web App</h4>
+                <p></p>
+                <p>
+                    Get instant updates on your fundraiser's progress via instant alerts, email and track everything
+                    realtime on CareCatalyst's web app
+
+                </p>
+            </div>
+
+        </div>
+        <div>
+            <div>
+                <h4>Dedicated Fundraiser expert</h4>
+                <p></p>
+                <p>
+                    A dedicated fundraiser expert guides you through your fundraising
+                </p>
+            </div>
+
+        </div>
+        <div>
+            <div>
+                <h4>
+                    Keep the raised amount</h4>
+                <p></p>
+                <p>
+                    You will receive all the raised amount after the transactional, processing fee.
+                </p>
+            </div>
+
+        </div>
+        <div>
+            <div>
+                <h4>
+                    24/7 support</h4>
+                <p></p>
+                <p>
+                    We offer you 24*7 assistance via call, WhatsApp, Email, SMS and our Instant Chatting Interface
+
+                </p>
+            </div>
+
+        </div>
+        <div>
+            <div>
+                <h4>Advertising support</h4>
+                <p></p>
+                <p>
+                    We provide marketing and promotional support for your fundraiser
+                </p>
+            </div>
+
+        </div>
+        <div>
+            <div>
+                <h4>Fundraising Marketing tool</h4>
+                <p></p>
+                <p>
+                    A highly intelligent marketing tool, which provides all insights on your fundraiser
+
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="seco">
+        <button onclick="window.location.href='fundraise.html'">START A FUNDRAISER</button>
+        <button onclick="window.location.href='BrowseFundraisers.html'">BROWSE FUNDRAISERS</button>
+    </div>
+    <!-- //course is here -->
+
+    <div id="maine">
+        <h1 id="maineh1">Most Promising Platform To Raise Funds</h1>
+        <p>Millions of people succesfully raised funds on CareCatalyst for their cause. Hear what some of our successful
+            campaigners have to say.</p>
+    </div>
+
+
+    <div id="fa">
+        <h3>FAQs</h3>
+        <hr>
+    </div>
+    <div class="layout">
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>How do I raise funds?</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>To Start a Fundraiser, follow the three steps:</p>
+                <p>1. Sign up on CareCatalyst</p>
+                <p>2. Fill up the form</p>
+                <p>3. Hit Submit</p>
+
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>Can I raise funds for a friend as well?</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    Yes, you can also raise funds for a friend, a loved one or anyone in need during life's crucial
+                    moments
+                </p>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>Does the raised amount reach the individual directly?</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    With CareCatalyst, the money you collect goes directly to the bank account associated with your
+                    fundraising
+                    page. Raising money for yourself or anyone has never been easier.
+                </p>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>Is it safe?</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    Your CareCatalyst fundraiser features the very best in secure payment encryption technology. Not
+                    only
+                    are
+                    your donors online payments safe, your money is stored securely until you're ready to request a
+                    withdrawal via electronic bank transfer.
+                </p>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>What if I don't reach my goal?</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    No problem. You will still receive the raised amount after the transactional processing fee.
+                    To know more about transactional processing fee, visit:
+                    www.carecatalyst.org/support/plans-and-pricing
+                </p>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>I have more questions, who do I write to?</p>
+
+            </div>
+            <div class="accordion__answer">
+                <p>
+                    You can write to info@carecatalyst.org Know someone who needs funds for medical treatment urgently?
+                    Help
+                    them out by sharing this information with them.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="foot">
+        <footer>
+          <div id="footer">
+            <div id="mainfoot">
+              <div id="foot1">
+                <div id="footimg">
+                  <img src="Images/carecatalyst-high-resolution-logo-transparent.png" alt="">
+                </div>
+                <div id="footlogo">
+                  <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+                  <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+                  <a href="https://www.instagram.com/carecatalyst_org?igsh=MTd5d3J6bTN4ZHRtMg=="> <i
+                      class="fa-brands fa-instagram"></i></a>
+                  <a href="#"> <i class="fa-brands fa-whatsapp"></i></a>
+    
+    
+                </div>
+    
+    
+    
+                <div id="Footcontact">
+                  <p>For any queries</p>
+                  <p>Email: info@carecataylst.org</p>
+                  <p> Contact No: +91 99999-XXXXX</p>
+    
+                </div>
+              </div>
+              <div id="foot2">
+                <h2>Causes</h2>
+                <div>
+                  <a href="medical.html" style="text-decoration: none; color: white; ;">Medical crowdfunding</a>
+                  <a href="children.html" style="text-decoration: none; color: white;">Child Welfare</a>
+                  <a href="education.html" style="text-decoration: none; color: white;">Education crowdfunding</a>
+                  <a href="animal.html" style="text-decoration: none; color: white;">Animal crowdfunding</a>
+                  <a href="other.html" style="text-decoration: none; color: white;">Others</a>
+                </div>
+              </div>
+              <div id="foot3">
+                <h2>How it works?</h2>
+                <div>
+                  <a href="ngo.html" style="text-decoration: none; color: white; ;">Fundraising for NGOs</a>
+                  <a href="tips.html" style="text-decoration: none; color: white; ;">Fundraising Tips</a>
+                  <a href="howitworks.html" style="text-decoration: none; color: white; ;">What is Crowfunding?</a>
+                  <a href="BrowseFundraisers.html" style="text-decoration: none; color: white; ;">Browse Fundraisers</a>
+    
+    
+                </div>
+              </div>
+              <div id="foot4">
+                <h2>About Us</h2>
+                <div>
+                  <p>Team CareCatalyst</p>
+                  <p>In The News</p>
+                  <p>Careers</p>
+                  <p>CareCatalyst Blog</p>
+                  <p>Success Stories</p>
+    
+    
+    
+                </div>
+              </div>
+              <div id="foot5">
+                <h2>Support</h2>
+                <div>
+                  <p>Medical Finance</p>
+                  <p>FAQs &amp; Help Center</p>
+                  <p>Are CareCatalyst Campaigns</p>
+                  <p>Genuine?</p>
+                  <p>Fundraiser Video</p>
+                  <p>Trust &amp; Safety</p>
+                  <p>Plans &amp; Pricing</p>
+                  <p>Contact Us</p>
+    
+                </div>
+              </div>
+    
+            </div>
+    
+            <div id="bottomfoot">
+    
+              <img src="	https://ketto.gumlet.io/assets/images/homepage/footer-secured-card.png?w=457&amp;dpr=2.0" alt="">
+    
+    
+            </div>
+          </div>
+    
+          <div id="affooter">
+            <p>Copyright © 2024 CareCatalyst Online Ventures Pvt Ltd. All Rights Reserved.
+              Terms of Use |
+              Privacy Policy |
+              AML Policy |
+              Use of cookies </p>
+          </div>
+    
+          <div id="affooter2">
+            <p>Know more about CareCatalyst Crowdfunding Platform</p>
+          </div>
+    
+    
+        </footer>
+      </div>
+
+
+    <script type="module">
+        import footer from "./components/EXfooter.js"
+        let foot = document.getElementById("foot");
+        foot.innerHTML = footer();
+      </script>
+      <script src="./scripts/index.js"></script>
+      <script src="./scripts/slider.js"></script>
+      <script src="./scripts/nav.js"></script>
+    <script type="module" src="./scripts/howitworks.js">
+
+
+    </script>
+    <script src="./scripts/nav.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="./styles/navBar.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+  <title>
+    CareCatalyst-Be the Changemaker
+  </title>
+</head>
+
+<body>
+  <!-- ==================== navbar========================================== -->
+  <div id="nav">
+    <div id="logo" style="cursor: pointer;" onclick="home()"><img
+        src="Images/carecatalyst-high-resolution-logo-transparent.png" alt="">
+    </div>
+    <div id="sec_nav">
+      <a href="./BrowseFundraisers.html">Browse Fundraisers</a>
+      <div class="tdropdown">
+        <button onclick="mytFunction()" class="tdropbtn">Fundraiser for<i
+            class="fa-sharp fa-solid fa-caret-down"></i></button>
+        <div id="tmyDropdown" class="tdropdown-content">
+          <a href="medical.html" class="app">Medical treatment</a>
+          <a href="animal.html" class="app">Animal treatment</a>
+          <a href="education.html" class="app">Educational Help</a>
+          <a href="children.html" class="app">Children treatment</a>
+          <a href="other.html" class="app">Other cases</a>
+        </div>
+      </div>
+      <a href="./howitworks.html">How it works</a>
+      <!-- <span><i class="fa-solid fa-magnifying-glass"></i>
+        Search
+      </span> -->
+    </div>
+    <div id="trd_nav">
+      <button onclick="whatsapp()" id="whatsapp" style="cursor: pointer;"> <i class="fa-brands fa-whatsapp"></i> Chat</button>
+      <button id="fund" onclick="signup()" style="cursor: pointer;"> Start a Fundraiser</button>
+      <!-- <a href="signup1.html" onclick="signShow()" class="signbtn">Sign In</a> -->
+
+    </div>
+    <button id="menu">
+      <label for="sidecheck" id="lab" onclick="side()"><i class="fa-solid fa-bars"></i></label></i></button>
+  </div>
+
+  <div id="header">
+    <div>
+      <div id="headings">
+        <h1>Need Funds to Pay For a Medical Emergency or Social Cause?</h1>
+        <div id="statsHolder">
+          <div>
+            <h3>0%</h3>
+            <span>PLATFORM FEE</span>
+          </div>
+          <div>
+            <h3>50+</h3>
+            <span>DONORS</span>
+          </div>
+          <div>
+            <h3>17</h3>
+            <span>FUNDRAISERS</span>
+          </div>
+        </div>
+        <div id="engButton">
+          <a href="fundraise.html">Start a Fundraiser for FREE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div id="banner">
+    <a href="payment.html">Donate Now ></a>
+    <div id="bannerText">
+      <h3>Start Monthly Donation to Save Lives</h3>
+      <p>
+        With your support, countless children will receive health care and a
+        happy life. Start your monthly donation today.
+      </p>
+    </div>
+    <img src="Images/2.png" alt="" />
+  </div> -->
+
+  <!-- =================== Trending Section ================= -->
+
+  <div id="headingHolder">
+    <h1>Trending Fundraisers</h1>
+    <p>View the fundraisers that are most active right now</p>
+  </div>
+  <!-- <div id="trendingSection"> -->
+  <div class="slider-container"><button id="prevBtn"></button>
+    <div class="cards"></div><button id="nextBtn"></button>
+  </div>
+
+  <!-- <div id="note">
+    <p>
+      Note: Some fundraisers are not eligible for any tax deduction such as
+      80G, 501(c), etc.
+    </p>
+    <a href="#">View More &rarr;</a>
+  </div> -->
+
+  <div id="startFund">
+    <div id="startFundHeading">
+      <h1>Start a Fundraiser in three simple steps</h1>
+    </div>
+    <div id="stepContainer">
+      <div id="stepsDiv">
+        <div id="stepsImg">
+          <img src="https://ketto.gumlet.io/assets/images/homepage/sac-separator.png?dpr=1.0&q=70&w=100" alt="" />
+        </div>
+        <div id="stepsDescriptionDiv">
+          <div class="stepContent">
+            <h2>Start your fundraiser</h2>
+            <p>
+              It’ll take only 2 minutes. Just tell us a few details about you
+              and the ones you are raising funds for.
+            </p>
+          </div>
+          <div class="stepContent">
+            <h2>Share your fundraiser</h2>
+            <p>
+              All you need to do is share the fundraiser with your friends and
+              family. In no time, support will start pouring in.
+            </p>
+            <p class="pleaseNote">
+              Share your fundraiser directly from dashboard on social media.
+            </p>
+          </div>
+          <div class="stepContent">
+            <h2>Withdraw Funds</h2>
+            <p>
+              The funds raised can be withdrawn without any hassle directly to
+              your bank account.
+            </p>
+            <p class="pleaseNote">
+              It takes only 5 minutes to withdraw funds on CareCatalyst.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- start a fundraise Buttons  -->
+
+  <div id="bt">
+    <a href="fundraise.html"><button id="btn-full">START A FUNDRAISER FOR FREE</button></a>
+    <button id="ghost-btn" onclick="window.location.href='tel:+1234567890'">TALK TO US</button>
+  </div>
+  <div id="next-bt">
+    <p>
+      Have any questions for us? Chat with our team on Facebook or WhatsApp
+      now.
+    </p>
+    <div id="bn">
+      <button onclick="window.location.href='https://www.facebook.com/sharer/sharer.php?u=https://www.example.com'">
+        <img src="https://icon-library.com/images/android-facebook-icon/android-facebook-icon-11.jpg" alt="error" />
+        CHAT WITH US
+      </button>
+      <button onclick="whatsapp()" id="whatsapp">
+        <img src="https://seeklogo.com/images/W/whatsapp-icon-logo-BDC0A8063B-seeklogo.com.png" alt="error" />
+        CHAT WITH US
+      </button>
+    </div>
+  </div>
+  <div id="causesSection">
+    <div id="causesHeading">
+      <h1>Causes you can raise funds for</h1>
+      <p>
+        Be it for a personal need, social cause or a creative idea - you can
+        count on us for the project that you want to raise funds for.
+      </p>
+    </div>
+    <div id="causeHolder">
+      <div class="cause">
+        <div id="causeImg">
+          <div class="causeImgHolder">
+            <a href="medical.html"><img id="causeLink" src="./Images/medical.png" alt="" /></a>
+          </div>
+          <div class="causeImgHolder">
+            <a href="children.html"><img id="causeLink" src="./Images/children.png" alt="" /></a>
+          </div>
+          <div class="causeImgHolder">
+            <a href="education.html"><img id="causeLink" src="./Images/education.png" alt="" /></a>
+          </div>
+          <div class="causeImgHolder">
+            <a href="animal.html"><img id="causeLink" src="./Images/animal.png" alt="" /></a>
+          </div>
+          <div class="causeImgHolder">
+            <a href="other.html"><img id="causeLink" src="./Images/others.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="whyKettoSection">
+    <div id="whyKettoHeading">
+      <h1>Why CareCatalyst?</h1>
+    </div>
+
+    <div id="reasonHolder">
+      <div class="reasonWrap">
+        <div><img src="./Images/i1.png" alt="" /></div>
+        <p>Industry’s best fundraising success rate</p>
+      </div>
+      <div class="reasonWrap">
+        <div><img src="./Images/i2.png" alt="" /></div>
+        <p>Supported By 55,00,000+ Donors</p>
+      </div>
+      <div class="reasonWrap">
+        <div><img src="./Images/i3.png" alt="" /></div>
+        <p>Easy-To-Manage Tools To Boost Results</p>
+      </div>
+      <div class="reasonWrap">
+        <div><img src="./Images/i4.png" alt="" /></div>
+        <p>Receive donations via all popular payment modes</p>
+      </div>
+      <div class="reasonWrap">
+        <div><img src="./Images/i5.png" alt="" /></div>
+        <p>Get Expert Support 24/7</p>
+      </div>
+      <div class="reasonWrap">
+        <div><img src="./Images/i6.png" alt="" /></div>
+        <p>A Dedicated Smart-Dashboard</p>
+      </div>
+      <div class="reasonWrap">
+        <div><img src="./Images/i7.png" alt="" /></div>
+        <p>Withdraw Funds Without Hassle</p>
+      </div>
+      <div class="reasonWrap">
+        <div><img src="./Images/i8.png" alt="" /></div>
+        <p>International Payment Support</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ======== success stories ============ -->
+
+  <h1 id="featuredHeading">Here’s what people say about <br> CareCatalyst </h1>
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="fade">
+      <div id="magicbox12">
+        <div>
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/priyanka-chopra-discusses-quantico-with-the-build-series-at-news-photo-951562696-1559810425.jpg?crop=0.971xw:0.959xh;0.0294xw,0.0207xh&resize=2048:*" />
+        </div>
+        <div id="div108108">
+          <h2>Priyanka Chopra: Priyanka Chopra Jonas Foundation</h2>
+          <p>
+            When Nick & I decided to start our #TogetherForIndia fundraiser for the COVID-19 crisis, we wanted a partner
+            with experience & boots on the ground. So we turned to CareCatalyst. They were transparent, providing
+            regular
+            updates on where & how funds were deployed. Also, their work on ground meant we could pivot our objectives
+            basis changing needs. Their team of professional, passionate people ensured aid was given where most needed.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fade">
+      <div id="magicbox12">
+        <div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Vinod_Khosla%2C_Web_2.0_Conference.jpg" />
+        </div>
+        <div id="div108108">
+          <br /><br />
+          <h2>Vinod Khosla: Khosla Ventures</h2>
+          <p>
+            People often wonder where the money would go. I can tell you, I started working with CareCatalyst when the
+            pandemic first broke a year ago. We validate them, it's a very good, reliable organization. People should
+            have confidence in giving to CareCatalyst and know that the money will be used immediately to help somebody.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fade">
+      <div id="magicbox12">
+        <div>
+          <img
+            src="https://www.gatesfoundation.org/-/media/gfo/3about/3people/ga14588770_rob_rosen_20190214_0001_3000x2400.jpg?rev=063b31d71a1440feb3bd50383ba56c12" />
+        </div>
+        <div id="div108108">
+          <h2>Robert Rosen: Bill and Melinda Gates Foundation</h2>
+          <p>
+            CareCatalyst's pursuit of bringing trust, convenience and choice for donors, is aligned with our goal to
+            enable
+            more informed and intentional generosity by everyday givers. We are happy to be a part of this respected
+            group of funders who have come forward to support this effort.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prevv" onclick="currentSlide(-1)">&#10094;</a>
+    <a class="nextt" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br />
+  <br />
+  <!-- slide2 end -->
+
+
+
+  <div id="bt" style="margin-top:30px">
+    <a href="fundraise.html"><button id="btn-full">START A FUNDRAISER FOR FREE</button></a>
+    <button id="ghost-btn" onclick="window.location.href='tel:+1234567890'">TALK TO US</button>
+  </div>
+
+  <div id="next-bt" style="margin-top: 100px;">
+    <p>
+      Have any questions for us? Chat with our team on Facebook or WhatsApp
+      now.
+    </p>
+    <div id="bn">
+      <button onclick="window.location.href='https://www.facebook.com/sharer/sharer.php?u=https://www.example.com'">
+        <img src="https://icon-library.com/images/android-facebook-icon/android-facebook-icon-11.jpg" alt="error" />
+        CHAT WITH US
+      </button>
+      <button onclick="whatsapp()" id="whatsapp">
+        <img src="https://seeklogo.com/images/W/whatsapp-icon-logo-BDC0A8063B-seeklogo.com.png" alt="error" />
+        CHAT WITH US
+      </button>
+    </div>
+  </div>
+
+  <!-- =======Footer========= -->
+
+  <div id="foot">
+    <footer>
+      <div id="footer">
+        <div id="mainfoot">
+          <div id="foot1">
+            <div id="footimg">
+              <img src="Images/carecatalyst-high-resolution-logo-transparent.png" alt="">
+            </div>
+            <div id="footlogo">
+              <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+              <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.instagram.com/carecatalyst_org?igsh=MTd5d3J6bTN4ZHRtMg=="> <i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="#"> <i class="fa-brands fa-whatsapp"></i></a>
+
+
+            </div>
+
+
+
+            <div id="Footcontact">
+              <p>For any queries</p>
+              <p>Email: info@carecataylst.org</p>
+              <p> Contact No: +91 99999-XXXXX</p>
+
+            </div>
+          </div>
+          <div id="foot2">
+            <h2>Causes</h2>
+            <div>
+              <a href="medical.html" style="text-decoration: none; color: white; ;">Medical crowdfunding</a>
+              <a href="children.html" style="text-decoration: none; color: white;">Child Welfare</a>
+              <a href="education.html" style="text-decoration: none; color: white;">Education crowdfunding</a>
+              <a href="animal.html" style="text-decoration: none; color: white;">Animal crowdfunding</a>
+              <a href="other.html" style="text-decoration: none; color: white;">Others</a>
+            </div>
+          </div>
+          <div id="foot3">
+            <h2>How it works?</h2>
+            <div>
+              <a href="ngo.html" style="text-decoration: none; color: white; ;">Fundraising for NGOs</a>
+              <a href="tips.html" style="text-decoration: none; color: white; ;">Fundraising Tips</a>
+              <a href="howitworks.html" style="text-decoration: none; color: white; ;">What is Crowfunding?</a>
+              <a href="BrowseFundraisers.html" style="text-decoration: none; color: white; ;">Browse Fundraisers</a>
+
+
+            </div>
+          </div>
+          <div id="foot4">
+            <h2>About Us</h2>
+            <div>
+              <p>Team CareCatalyst</p>
+              <p>In The News</p>
+              <p>Careers</p>
+              <p>CareCatalyst Blog</p>
+              <p>Success Stories</p>
+
+
+
+            </div>
+          </div>
+          <div id="foot5">
+            <h2>Support</h2>
+            <div>
+              <p>Medical Finance</p>
+              <p>FAQs &amp; Help Center</p>
+              <p>Are CareCatalyst Campaigns</p>
+              <p>Genuine?</p>
+              <p>Fundraiser Video</p>
+              <p>Trust &amp; Safety</p>
+              <p>Plans &amp; Pricing</p>
+              <p>Contact Us</p>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div id="bottomfoot">
+
+          <img src="	https://ketto.gumlet.io/assets/images/homepage/footer-secured-card.png?w=457&amp;dpr=2.0" alt="">
+
+
+        </div>
+      </div>
+
+      <div id="affooter">
+        <p>Copyright © 2024 CareCatalyst Online Ventures Pvt Ltd. All Rights Reserved.
+          Terms of Use |
+          Privacy Policy |
+          AML Policy |
+          Use of cookies </p>
+      </div>
+
+      <div id="affooter2">
+        <p>Know more about CareCatalyst Crowdfunding Platform</p>
+      </div>
+
+
+    </footer>
+  </div>
+
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="./scripts/jquery.lbslider.js"></script>
+  <script>
+    jQuery(".slider").lbSlider({
+      leftBtn: ".sa-left",
+      rightBtn: ".sa-right",
+      visible: 3,
+      // autoPlay: true,
+      // autoPlayDelay: 5,
+    });
+  </script>
+
+  <script type="module">
+    import footer from "./components/EXfooter.js"
+    let foot = document.getElementById("foot");
+    foot.innerHTML = footer();
+  </script>
+  <script src="./scripts/index.js"></script>
+  <script src="./scripts/slider.js"></script>
+  <script src="./scripts/nav.js"></script>
+  <!-- <script src="https://js.stripe.com/v3/"></script> -->
+</body>
+
+</html>

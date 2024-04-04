@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundraising – Best Online Fundraising Site In India - CareCatalyst</title>
+  <link rel="stylesheet" href="./styles/BrowseFundraisers.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/navBar.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      /* Add a margin at the top */
+      margin-top: -50px;
+    }
+
+
+    .card {
+      width: 500px;
+      /* Adjust the width of the card */
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 20px;
+    }
+
+    .card img {
+      width: 50%;
+      /* Ensure the image takes the full width of its container */
+      height: 70%;
+      /* Maintain the aspect ratio of the image */
+      border-radius: 8px;
+      /* Apply border radius to match the card */
+    }
+
+
+    .card-content {
+      margin-top: 20px;
+    }
+
+    .name {
+      font-weight: bold;
+    }
+
+    .designation {
+      color: #666;
+    }
+
+    .paragraph {
+      margin-top: 10px;
+      color: #333;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- ==================== navbar========================================== -->
+  <div id="nav">
+    <div id="logo" style="cursor: pointer;" onclick="home()"><img
+        src="Images/carecatalyst-high-resolution-logo-transparent.png" alt="">
+    </div>
+    <div id="sec_nav">
+      <a href="./BrowseFundraisers.html">Browse Fundraisers</a>
+      <div class="tdropdown">
+        <button onclick="mytFunction()" class="tdropbtn">Fundraiser for<i
+            class="fa-sharp fa-solid fa-caret-down"></i></button>
+        <div id="tmyDropdown" class="tdropdown-content">
+          <a href="medical.html" class="app">Medical treatment</a>
+          <a href="animal.html" class="app">Animal treatment</a>
+          <a href="education.html" class="app">Educational Help</a>
+          <a href="children.html" class="app">Children treatment</a>
+          <a href="other.html" class="app">Other cases</a>
+        </div>
+      </div>
+      <a href="./howitworks.html">How it works</a>
+      <!-- <span><i class="fa-solid fa-magnifying-glass"></i>
+        Search
+      </span> -->
+    </div>
+    <div id="trd_nav">
+      <button onclick="whatsapp()" id="whatsapp"> <i class="fa-brands fa-whatsapp"></i> Chat</button>
+      <button id="fund" onclick="signup()"> Start a Fundraiser</button>
+      <!-- <a href="signup.html" onclick="signShow()" class="signbtn">Sign In</a> -->
+
+    </div>
+    <button id="menu">
+      <label for="sidecheck" id="lab" onclick="side()"><i class="fa-solid fa-bars"></i></label></i></button>
+  </div>
+
+  <div id="head" style="margin-top: 10 px;">
+    <h1 style="text-align: center; padding-top: 50px; ">Meet Our Founders</h1>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <img
+        src="Images/naitik.jpg"
+        alt="Image">
+      <div class="card-content">
+        <div class="name">Naitik Gandhi</div>
+        <div class="designation">Co-Founder and CEO</div>
+        <div class="paragraph">Meet Naitik Gandhi, the CEO and co-founder of CareCatalyst, whose His journey
+          began with a vision, a dream to create
+          something meaningful that would make a difference. With his exceptional coding skills, he turned
+          that vision into reality, founding CareCatalyst and leading it to success. Outside of work, Naitik
+          is a cinephile, always seeking out cinematic masterpieces that captivate and inspire him. His
+          journey is as intriguing as his favorite movie, "Dune." He's also an avid traveler, constantly
+          exploring new places and cultures, feeding his curiosity and love for
+          adventure. When he's not immersed in the world of technology, you can find Naitik adding to his
+          impressive sneaker collection, a testament to his passion for detail and style. With his diverse
+          interests and unwavering dedication, Naitik is not just a CEO; he's a maverick on a mission
+          to experience life to the fullest.</div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="Images/jainam.jpeg" alt="Image">
+      <div class="card-content">
+        <div class="name">Jainam Kavaiys</div>
+        <div class="designation">Co-Founder and CTO</div>
+        <div class="paragraph">Introducing Jainam Kavaiya, the visionary CTO and co-founder of CareCatalyst, a
+          dynamic leader with a passion for gaming, travel, and sneaker collection. Inspired by the
+          ever-evolving world of technology, Jainam co-founded CareCatalyst with a mission to innovate and
+          inspire. When he's not strategizing and leading his team to success, Jainam can be found immersing
+          himself in the virtual battlegrounds of his favorite game, Valorant, showcasing his competitive
+          spirit and strategic prowess. His love for travel fuels his curiosity, constantly seeking new
+          adventures and experiences around the globe. In his downtime, Jainam indulges in his passion for
+          sneakers, adding to his impressive collection with each unique pair. With his blend of creativity,
+          dedication, and a love for exploration, Jainam is not just a CTO; he's a gaming aficionado and
+          globetrotter on a mission to make a mark in the world of business.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =======Footer========= -->
+
+  <div id="foot">
+    <footer>
+      <div id="footer">
+        <div id="mainfoot">
+          <div id="foot1">
+            <div id="footimg">
+              <img src="Images/carecatalyst-high-resolution-logo-transparent.png" alt="">
+            </div>
+            <div id="footlogo">
+              <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+              <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.instagram.com/carecatalyst_org?igsh=MTd5d3J6bTN4ZHRtMg=="> <i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="#"> <i class="fa-brands fa-whatsapp"></i></a>
+
+
+            </div>
+
+
+
+            <div id="Footcontact">
+              <p>For any queries</p>
+              <p>Email: info@carecataylst.org</p>
+              <p> Contact No: +91 99999-XXXXX</p>
+
+            </div>
+          </div>
+          <div id="foot2">
+            <h2>Causes</h2>
+            <div>
+              <a href="medical.html" style="text-decoration: none; color: white; ;">Medical crowdfunding</a>
+              <a href="children.html" style="text-decoration: none; color: white;">Child Welfare</a>
+              <a href="education.html" style="text-decoration: none; color: white;">Education crowdfunding</a>
+              <a href="animal.html" style="text-decoration: none; color: white;">Animal crowdfunding</a>
+              <a href="other.html" style="text-decoration: none; color: white;">Others</a>
+            </div>
+          </div>
+          <div id="foot3">
+            <h2>How it works?</h2>
+            <div>
+              <a href="ngo.html" style="text-decoration: none; color: white; ;">Fundraising for NGOs</a>
+              <a href="tips.html" style="text-decoration: none; color: white; ;">Fundraising Tips</a>
+              <a href="howitworks.html" style="text-decoration: none; color: white; ;">What is Crowfunding?</a>
+              <a href="BrowseFundraisers.html" style="text-decoration: none; color: white; ;">Browse Fundraisers</a>
+
+
+            </div>
+          </div>
+          <div id="foot4">
+            <h2>About Us</h2>
+            <div>
+              <p>Team CareCatalyst</p>
+              <p>In The News</p>
+              <p>Careers</p>
+              <p>CareCatalyst Blog</p>
+              <p>Success Stories</p>
+
+
+
+            </div>
+          </div>
+          <div id="foot5">
+            <h2>Support</h2>
+            <div>
+              <p>Medical Finance</p>
+              <p>FAQs &amp; Help Center</p>
+              <p>Are CareCatalyst Campaigns</p>
+              <p>Genuine?</p>
+              <p>Fundraiser Video</p>
+              <p>Trust &amp; Safety</p>
+              <p>Plans &amp; Pricing</p>
+              <p>Contact Us</p>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div id="bottomfoot">
+
+          <img src="	https://ketto.gumlet.io/assets/images/homepage/footer-secured-card.png?w=457&amp;dpr=2.0" alt="">
+
+
+        </div>
+      </div>
+
+      <div id="affooter">
+        <p>Copyright © 2024 CareCatalyst Online Ventures Pvt Ltd. All Rights Reserved.
+          Terms of Use |
+          Privacy Policy |
+          AML Policy |
+          Use of cookies </p>
+      </div>
+
+      <div id="affooter2">
+        <p>Know more about CareCatalyst Crowdfunding Platform</p>
+      </div>
+
+
+    </footer>
+  </div>
+
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="./scripts/jquery.lbslider.js"></script>
+  <script>
+    jQuery(".slider").lbSlider({
+      leftBtn: ".sa-left",
+      rightBtn: ".sa-right",
+      visible: 3,
+      // autoPlay: true,
+      // autoPlayDelay: 5,
+    });
+  </script>
+
+  <script type="module">
+    import footer from "./components/EXfooter.js"
+    let foot = document.getElementById("foot");
+    foot.innerHTML = footer();
+  </script>
+  <script src="./scripts/index.js"></script>
+  <script src="./scripts/slider.js"></script>
+  <script src="./scripts/nav.js"></script>
+
+</body>
+
+</html>

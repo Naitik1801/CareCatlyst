@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareCatalyst-Be the Changemaker</title>
+  <link rel="stylesheet" href="./styles/index.css">
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="./styles/navBar.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+  <title>
+    CareCatalyst-Be the Changemaker
+  </title>
+</head>
+
+<body>
+
+  <!-- ==================== navbar========================================== -->
+  <div id="nav">
+    <div id="logo" style="cursor: pointer;" onclick="home()"><img
+        src="Images/carecatalyst-high-resolution-logo-transparent.png" alt="">
+    </div>
+    <div id="sec_nav">
+      <a href="./BrowseFundraisers.html">Browse Fundraisers</a>
+      <div class="tdropdown">
+        <button onclick="mytFunction()" class="tdropbtn">Fundraiser for<i
+            class="fa-sharp fa-solid fa-caret-down"></i></button>
+        <div id="tmyDropdown" class="tdropdown-content">
+          <a href="medical.html" class="app">Medical treatment</a>
+          <a href="animal.html" class="app">Animal treatment</a>
+          <a href="education.html" class="app">Educational Help</a>
+          <a href="children.html" class="app">Children treatment</a>
+          <a href="other.html" class="app">Other cases</a>
+        </div>
+      </div>
+      <a href="./howitworks.html">How it works</a>
+      <!-- <span><i class="fa-solid fa-magnifying-glass"></i>
+        Search
+      </span> -->
+    </div>
+    <div id="trd_nav">
+      <button onclick="whatsapp()" id="whatsapp"> <i class="fa-brands fa-whatsapp"></i> Chat</button>
+      <button id="fund" onclick="signup()"> Start a Fundraiser</button>
+      <!-- <a href="sign.html" onclick="signShow()" class="signbtn">Sign In</a> -->
+
+    </div>
+    <button id="menu">
+      <label for="sidecheck" id="lab" onclick="side()"><i class="fa-solid fa-bars"></i></label></i></button>
+  </div>
+
+
+  <div id="causesSection">
+    <div id="causesHeading">
+      <h1>Causes you can raise funds for</h1>
+      <p>
+        OTHERS
+      </p>
+    </div>
+    <div id="causeHolder">
+      <div class="cause">
+        <div id="causeImg">
+          <div class="causeImgHolder">
+            <a href="medical.html"><img id="causeLink" src="./Images/medical.png" alt="" /></a>
+          </div>
+          <div class="causeImgHolder">
+            <a href="children.html"><img id="causeLink" src="./Images/children.png" alt="" /></a>
+          </div>
+          <div class="causeImgHolder">
+            <a href="education.html"><img id="causeLink" src="./Images/education.png" alt="" /></a>
+          </div>
+          <div class="causeImgHolder">
+            <a href="animal.html"><img id="causeLink" src="./Images/animal.png" alt="" /></a>
+          </div>
+          <div class="causeImgHolder">
+            <a href="other.html"><img id="causeLink" src="./Images/others.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-container" style="padding-top: 50px; padding-bottom: 50px;"><button id="prevBtn"></button>
+        <div class="cards"></div><button id="nextBtn"></button>
+      </div>
+
+
+      <!-- =======Footer========= -->
+
+      <div id="foot">
+        <footer>
+          <div id="footer">
+            <div id="mainfoot">
+              <div id="foot1">
+                <div id="footimg">
+                  <img src="Images/carecatalyst-high-resolution-logo-transparent.png" alt="">
+                </div>
+                <div id="footlogo">
+                  <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+                  <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+                  <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"> <i class="fa-brands fa-whatsapp"></i></a>
+
+
+                </div>
+
+                <div id="follow">
+                  <h1> 150</h1>
+                  <p>Followers</p>
+                </div>
+
+                <div id="Footcontact">
+                  <p>For any queries</p>
+                  <p>Email: info@carecataylst.org</p>
+                  <p> Contact No: +91 99999-XXXXX</p>
+
+                </div>
+              </div>
+              <div id="foot2">
+                <h2>Causes</h2>
+                <div>
+                  <a href="medical.html" style="text-decoration: none; color: white; ;">Medical crowdfunding</a>
+                  <a href="children.html" style="text-decoration: none; color: white;">Child Welfare</a>
+                  <a href="education.html" style="text-decoration: none; color: white;">Education crowdfunding</a>
+                  <a href="animal.html" style="text-decoration: none; color: white;">Animal crowdfunding</a>
+                  <a href="other.html" style="text-decoration: none; color: white;">Others</a>
+
+                </div>
+              </div>
+              <div id="foot3">
+                <h2>How it works?</h2>
+                <div>
+                  <a href="ngo.html" style="text-decoration: none; color: white; ;">Fundraising for NGOs</a>
+                  <a href="tips.html" style="text-decoration: none; color: white; ;">Fundraising Tips</a>
+                  <a href="howitworks.html" style="text-decoration: none; color: white; ;">What is Crowfunding?</a>
+                  <a href="BrowseFundraisers.html" style="text-decoration: none; color: white; ;">Browse Fundraisers</a>
+
+
+                </div>
+              </div>
+              <div id="foot4">
+                <h2>About Us</h2>
+                <div>
+                  <p>Team CareCatalyst</p>
+                  <p>In The News</p>
+                  <p>Careers</p>
+                  <p>CareCatalyst Blog</p>
+                  <p>Success Stories</p>
+
+
+
+                </div>
+              </div>
+              <div id="foot5">
+                <h2>Support</h2>
+                <div>
+                  <p>Medical Finance</p>
+                  <p>FAQs &amp; Help Center</p>
+                  <p>Are CareCatalyst Campaigns</p>
+                  <p>Genuine?</p>
+                  <p>Fundraiser Video</p>
+                  <p>Trust &amp; Safety</p>
+                  <p>Plans &amp; Pricing</p>
+                  <p>Contact Us</p>
+
+                </div>
+              </div>
+
+            </div>
+
+            <div id="bottomfoot">
+
+              <img src="	https://ketto.gumlet.io/assets/images/homepage/footer-secured-card.png?w=457&amp;dpr=2.0"
+                alt="">
+
+
+            </div>
+          </div>
+
+          <div id="affooter">
+            <p>Copyright © 2024 CareCatalyst Online Ventures Pvt Ltd. All Rights Reserved.
+              Terms of Use |
+              Privacy Policy |
+              AML Policy |
+              Use of cookies </p>
+          </div>
+
+
+          <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+          <script src="./scripts/jquery.lbslider.js"></script>
+          <script>
+            jQuery(".slider").lbSlider({
+              leftBtn: ".sa-left",
+              rightBtn: ".sa-right",
+              visible: 3,
+              // autoPlay: true,
+              // autoPlayDelay: 5,
+            });
+          </script>
+
+          <script type="module">
+            import footer from "./components/EXfooter.js"
+            let foot = document.getElementById("foot");
+            foot.innerHTML = footer();
+          </script>
+          <script src="./scripts/index.js"></script>
+          <script src="./scripts/otherslider.js"></script>
+          <script src="./scripts/nav.js"></script>
+</body>
+
+</html>
